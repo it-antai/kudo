@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kudo.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/logo-web/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/logo-web/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/logo-web/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/logo-web/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/logo-web/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/logo-web/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/logo-web/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/logo-web/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/logo-web/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/logo-web/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/logo-web/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/logo-web/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/logo-web/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/logo-web/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Kudo Gò Vấp</title>
+  </head>
+  <!DOCTYPE html>
+  <html lang="vi">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="kudo.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+      <title>Thông tin - Kudo Gò Vấp</title>
+    </head>
+    <body>
+      <!-- Menu -->
+      <button class="hamburger" aria-label="Mở menu điều hướng">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Chuyển hướng thông tin và sản phẩm  -->
+      <div class="sidebar">
+        <button class="close-btn" aria-label="Đóng menu">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu-items">
+          <li><a href="/sanpham.html">Sản phẩm</a></li>
+          <li><a href="/thongtin.html">Thông tin</a></li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="container">
+        <h1>Thông tin Kudo Gò Vấp</h1>
+        <p>Địa chỉ: 123 Đường Lê Văn Thọ, Quận Gò Vấp, TP. HCM</p>
+        <p>Liên hệ: <a href="tel:0789152613">0789152613</a></p>
+      </div>
+
+      <!-- JavaScript for Hamburger Menu -->
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const sidebar = document.querySelector(".sidebar");
+        const closeBtn = document.querySelector(".close-btn");
+
+        hamburger.addEventListener("click", () => {
+          sidebar.classList.toggle("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          sidebar.classList.remove("active");
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+            sidebar.classList.remove("active");
+          }
+        });
+      </script>
+    </body>
+  </html>
+  <!-- kết thúc tạo gạch thông tin và sản phẩm-->
+  <body>
+    <!-- Thêm div chứa các biểu tượng liên kết -->
+    <div class="social-links">
+      <a
+        href="https://www.facebook.com/share/19pmywrtMz/?mibextid=wwXIfr"
+        target="_blank"
+        class="social-icon facebook"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a
+        href="https://zalo.me/g/uqsblf980"
+        target="_blank"
+        class="social-icon zalo"
+      >
+        <i class="fas fa-comment"></i>
+        <!-- Thay bằng icon Zalo nếu có -->
+      </a>
+      <a href="tel:0789152613" class="social-icon phone">
+        <i class="fas fa-phone"></i> SĐT
+      </a>
+    </div>
+    <!-- phần khác kết thúc 3 nút chuyển hướng-->
+    <div class="container">
+      <hr />
+      <h1>Kudo Gò Vấp</h1>
+      <img
+        src="/img/lichtap.jpg"
+        alt="lich tập"
+        style="max-width: 100%; height: auto"
+        class="lichtap"
+      />
+      <hr />
+      <h2>Giới thiệu về môn võ Kudo</h2>
+      <p>
+        <strong>Kudo</strong> là một môn võ thuật tổng hợp có nguồn gốc từ Nhật
+        Bản, được sáng lập bởi đại sư <strong>Takashi Azuma</strong> vào năm
+        1981. Đây là một nhánh phát triển từ <strong>Karate Kyokushin</strong>,
+        kết hợp các đòn đánh đứng, vật, siết khóa và kỹ thuật khuất phục trên
+        mặt đất.
+      </p>
+
+      <p>
+        Điểm đặc biệt của Kudo là tính đối kháng toàn diện, không thua kém gì võ
+        thuật tổng hợp (<strong>MMA</strong>), nhưng vẫn giữ được tinh thần
+        <strong>Budo</strong> (Võ Đạo). Người tập Kudo thường sử dụng
+        <strong>mũ kính bảo vệ đầu</strong> và mặc <strong>võ phục Gi</strong>,
+        giúp tăng cường an toàn khi thi đấu và luyện tập.
+      </p>
+
+      <p>
+        Môn võ này không chỉ tập trung vào khía cạnh thi đấu mà còn được xem là
+        một hệ thống giáo dục thanh thiếu niên, phương pháp tự vệ và duy trì sức
+        khỏe. Hiện nay, Kudo đã lan rộng đến hơn
+        <strong>50 quốc gia</strong> trên thế giới và ngày càng được biết đến
+        tại Việt Nam.
+      </p>
+      <!-- các đòn đánh kudo -->
+      <h2>Đòn đánh trong Kudo</h2>
+      <p>
+        <strong>Kudo</strong> là một môn võ tổng hợp, kết hợp các kỹ thuật
+        <strong>đấm, đá, vật, siết khóa</strong> và <strong>kcity phục</strong>.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Đấm (Tsuki):</strong> Bao gồm đấm thẳng, đấm móc và đấm vòng.
+          Kudo cho phép đấm vào mặt nhờ có mũ bảo hộ.
+          <img
+            src="./img/dondam.jpg"
+            alt="Dondam"
+            style="
+              max-width: 500px;
+              height: auto;
+              display: block;
+              margin-left: 0;
+            "
+          />
+        </li>
+        <li>
+          <strong>Đá (Keri):</strong> Các đòn đá phổ biến gồm đá vòng cầu
+          (<strong>Mawashi Geri</strong>), đá thẳng (<strong>Mae Geri</strong>)
+          và đá xoay (<strong>Ushiro Geri</strong>).
+          <video
+            style="width: 500px; height: auto; display: block; margin-left: 0"
+            controls
+          >
+            <source src="./video/1.mp4" type="video/mp4" />
+            Trình duyệt của bạn không hỗ trợ video.
+          </video>
+        </li>
+        <li>
+          <strong>Vật (Nage Waza):</strong> Kudo tích hợp nhiều kỹ thuật vật từ
+          Judo, giúp võ sĩ có thể quật ngã đối thủ khi cận chiến.
+        </li>
+        <li>
+          <strong>Khóa siết (Kansetsu Waza):</strong> Các đòn khóa tay, khóa
+          chân và siết cổ từ Judo và Jiu-Jitsu giúp khống chế đối thủ.
+        </li>
+        <li>
+          <strong>Kỹ thuật khuất phục (Shime Waza):</strong> Khi trận đấu xuống
+          mặt đất, võ sĩ có thể dùng các đòn siết cổ hoặc bẻ khớp để buộc đối
+          thủ đầu hàng.
+        </li>
+      </ul>
+
+      <p>
+        Nhờ sự kết hợp đa dạng này, <strong>Kudo</strong> trở thành một môn võ
+        có tính thực chiến cao, phù hợp cho cả thi đấu và tự vệ.
+      </p>
+    </div>
+  </body>
+</html>

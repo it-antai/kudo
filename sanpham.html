@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <!-- Menu -->
+      <button class="hamburger" aria-label="Mở menu điều hướng">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Chuyển hướng thông tin và sản phẩm  -->
+      <div class="sidebar">
+        <button class="close-btn" aria-label="Đóng menu">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu-items">
+          <li><a href="/kudo.html">Home</a></li>
+          <li><a href="/thongtin.html">Thông tin</a></li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="container">
+        <h1>Thông tin Kudo Gò Vấp</h1>
+        <p>Địa chỉ: 123 Đường Lê Văn Thọ, Quận Gò Vấp, TP. HCM</p>
+        <p>Liên hệ: <a href="tel:0789152613">0789152613</a></p>
+      </div>
+
+      <!-- JavaScript for Hamburger Menu -->
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const sidebar = document.querySelector(".sidebar");
+        const closeBtn = document.querySelector(".close-btn");
+
+        hamburger.addEventListener("click", () => {
+          sidebar.classList.toggle("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          sidebar.classList.remove("active");
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+            sidebar.classList.remove("active");
+          }
+        });
+      </script>
+    </body>
+  </html>
+  <!-- kết thúc tạo gạch thông tin và sản phẩm-->
+  <body>
+    <h1>sản phẩm</h1>
+  </body>
+</html>
